@@ -1,5 +1,8 @@
 services:
   web:
+    build: .
+    environment:
+      - FLASK_DEBUG=False
     container_name: web_app_container
     image: drorganvidez/uvlhub:dev
     env_file:
