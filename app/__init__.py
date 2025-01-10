@@ -19,6 +19,7 @@ load_dotenv()
 db = SQLAlchemy()
 migrate = Migrate()
 
+
 def create_app(config_name='development'):
     app = Flask(__name__)
 
